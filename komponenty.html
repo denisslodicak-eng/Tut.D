@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tut.D - Komponenty</title>
+  <style>
+    body {
+      background-color: #1f2937;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111827;
+      padding: 20px;
+      text-align: center;
+    }
+    header a {
+      color: #facc15;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #34d399;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #facc15;
+    }
+    h2 {
+      color: #facc15;
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .card {
+      background-color: #374151;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #fbbf24;
+    }
+    .card p {
+      font-size: 14px;
+      color: #d1d5db;
+    }
+    footer {
+      background-color: #111827;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">Tut.D</a>
+  <nav>
+    <a href="index.html">Domov</a>
+    <a href="komponenty.html">Komponenty</a>
+    <a href="skladanie.html">Skladanie</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Porovnanie PC komponentov</h1>
+
+  <!-- CPU -->
+  <section>
+    <h2>CPU</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Intel i5-12400F</h3>
+        <p>6/12 jadrá/vlákna, Turbo 4.4GHz. Skvelý pre bežný gaming a multitasking.</p>
+      </div>
+      <div class="card">
+        <h3>AMD Ryzen 5 5600</h3>
+        <p>6/12 jadrá/vlákna, Turbo 4.4GHz. Efektívny a cenovo dostupný CPU pre hry.</p>
+      </div>
+      <div class="card">
+        <h3>Intel i7-12700K</h3>
+        <p>12/20 jadrá/vlákna, Turbo 5.0GHz. Vhodný pre náročný gaming a tvorbu obsahu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GPU -->
+  <section>
+    <h2>GPU</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>RTX 3060</h3>
+        <p>Dobrá voľba pre 1080p hry.</p>
+      </div>
+      <div class="card">
+        <h3>RX 6700 XT</h3>
+        <p>Výborný výkon na 1440p, stabilný pre moderné hry.</p>
+      </div>
+      <div class="card">
+        <h3>RTX 4070</h3>
+        <p>Top výkon pre 1080p aj 1440p.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAM -->
+  <section>
+    <h2>RAM</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Corsair Vengeance LPX 16GB DDR4 3200MHz</h3>
+        <p>Dobré pre základný gaming a školské projekty.</p>
+      </div>
+      <div class="card">
+        <h3>G.Skill Trident Z 32GB DDR4 3600MHz</h3>
+        <p>Výborné pre multitasking a náročnejšie aplikácie.</p>
+      </div>
+      <div class="card">
+        <h3>Kingston Fury Beast 32GB DDR5 6000MHz</h3>
+        <p>Extrémne rýchle RAM pre top konfigurácie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSD -->
+  <section>
+    <h2>SSD</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Samsung 970 EVO 1TB</h3>
+        <p>Spoľahlivé a rýchle SSD pre väčšinu používateľov.</p>
+      </div>
+      <div class="card">
+        <h3>Kingston KC3000 1TB</h3>
+        <p>Super rýchle NVMe SSD pre hry a kopírovanie dát.</p>
+      </div>
+      <div class="card">
+        <h3>WD Black SN850X 1TB</h3>
+        <p>Top výkon pre hráčov a profesionálov.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motherboard -->
+  <section>
+    <h2>Motherboard</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>MSI B550 Tomahawk</h3>
+        <p>Skvelá voľba pre AMD Ryzen CPU, spoľahlivý a cenovo dostupný.</p>
+      </div>
+      <div class="card">
+        <h3>ASUS TUF Z690-Plus</h3>
+        <p>Vhodný pre Intel 12. generáciu, stabilný a odolný.</p>
+      </div>
+      <div class="card">
+        <h3>Gigabyte X670 Aorus</h3>
+        <p>Prémiový motherboard pre AMD s extra funkciami a DDR5.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PSU -->
+  <section>
+    <h2>PSU (Zdroj)</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Corsair RM750x</h3>
+        <p>Spoľahlivý 750W zdroj s tichou prevádzkou.</p>
+      </div>
+      <div class="card">
+        <h3>Seasonic Focus GX-650</h3>
+        <p>Kvalitný 650W zdroj vhodný pre väčšinu PC zostáv.</p>
+      </div>
+      <div class="card">
+        <h3>EVGA SuperNOVA 750 G5</h3>
+        <p>Prémiový zdroj s výkonom pre náročných používateľov.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Tut.D
+</footer>
+
+</body>
+</html>
